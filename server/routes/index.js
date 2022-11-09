@@ -1,33 +1,16 @@
+const { Router } = require('express');
 var express = require('express');
 var app = express.Router();
+let indexController = require("../controller/index");
 
 /* GET splash page. */
-app.get('/', function(req, res, next) {
-  // create a page for us
-  res.render('index', { 
-    title: 'Home'});
-});
+app.get('/', indexController.displaySplashPage);
 
-/* GET home page. */
-app.get('/home', function(req, res, next) {
-  // create a page for us
-  res.render('index', { 
-    title: 'Home'});
-});
+/* GET main page. */
+app.get('/main', indexController.displayMainPage);
 
-/* GET home page. */
-app.get('/main', function(req, res, next) {
-  // create a page for us
-  res.render('main', { 
-    title: 'Main Page'});
-});
-
-/* GET home page. */
-app.get('/about', function(req, res, next) {
-  // create a page for us
-  res.render('about', { 
-    title: 'About Page'});
-});
+/* GET about page. */
+app.get('/about', indexController.displayAboutPage);
 
 
 module.exports = app;
