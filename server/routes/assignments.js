@@ -62,7 +62,7 @@ router.post('/add',(req,res,next)=>
         }
         else
         {
-            res.redirect('/assignment/list')
+            res.redirect('/assignmentList');
         }
     })
 });
@@ -83,7 +83,7 @@ router.get('/edit/:id',(req,res,next)=>
         }
         else
         {
-            res.render('assignment/edit',{title:'Edit Assignment', assignment:asToEdit});
+            res.render('assignment/edit',{title:'Edit Assignment', assignment: asToEdit});
         }
     });
 });
@@ -92,7 +92,7 @@ router.get('/edit/:id',(req,res,next)=>
 
 router.post('/edit/:id',(req,res,next)=>
 {
-    let id = req.param.id;
+    let id = req.params.id;
     let updateAs = Assignment
     (
         {
@@ -111,7 +111,7 @@ router.post('/edit/:id',(req,res,next)=>
         }
         else
         {
-            res.redirect('/assignment/list')
+            res.redirect('/assignmentList');
         }
     });
 });
@@ -121,8 +121,8 @@ router.post('/edit/:id',(req,res,next)=>
 
 router.get('/delete/:id',(req,res,next)=>
 {
-    let id = req.param.id;
-    Assignment.remove({_id:id},(err) =>
+    let id = req.params.id;
+    Assignment.deleteOne({_id:id},(err) =>
     {
         if(err)
         {
@@ -131,7 +131,7 @@ router.get('/delete/:id',(req,res,next)=>
         }
         else
         {
-            res.redirect('/assignment/list')
+            res.redirect('/assignmentList');
         }
     });
 });

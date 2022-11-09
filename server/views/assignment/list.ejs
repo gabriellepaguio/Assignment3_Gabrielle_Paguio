@@ -34,16 +34,16 @@
                             <td class="text-center col-2"><%= assignmentList[count].Class %></td>
                             <td class="text-center col-1"><%= assignmentList[count].Due %></td>
                             <td class="text-center col-1">
-                                <a href = "assignment/edit/<%= assignmentList[count]._id %>"
+                                <a href = "assignmentList/edit/<%= assignmentList[count]._id %>"
                                     // btn-primary makes button blue
-                                    class="btn btn-primary"
+                                    class="btn btn-primary">
                                     <i class="fas fa-pencil-alt"></i>Edit
                                 </a>
                             </td>
                             <td class="text-center col-1">
-                                <a href = "assignment/delete/<%= assignmentList[count]._id %>"
+                                <a href = "assignmentList/delete/<%= assignmentList[count]._id %>"
                                     // btn-danger makes button red
-                                    class="btn btn-danger"
+                                    class="btn btn-danger">
                                     <i class="fas fa-trash-alt"></i>Delete
                                 </a>
                             </td>
