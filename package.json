@@ -1,0 +1,24 @@
+{
+  "name": "assignment3_gabrielle_paguio",
+  "version": "1.0.0",
+  "description": "Assignment 3 CRUD",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Gabrielle Paguio",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.0",
+    "bootstrap": "^5.2.2",
+    "connect": "^3.7.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "express-generator": "^4.16.1",
+    "jquery": "^3.6.1",
+    "mongoose": "^6.7.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20"
+  }
+}
