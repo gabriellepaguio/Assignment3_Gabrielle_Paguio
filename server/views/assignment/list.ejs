@@ -3,13 +3,17 @@
     100820990-->
 
 <!-- display the assignment database -->
-<%- include partials/header.ejs %>
-<%- include partials/nav_bar.ejs %>
+<%- include ../partials/header.ejs %>
+<%- include ../partials/nav_bar.ejs %>
 <main class="min-vh-100">
   <div class="contianer">
     <div class="row">
         <div class="col-md-offset-3 col-md-10">
             <h1><%= title %></h1>
+            <a href="/assignmentList/add", class="btn btn-primary" role="button">
+                <i class="fas fa-plus-circle"></i> Add an Assignemnt
+            </a>
+            <br>
             <br>
             <table class="table table-bordered table-striped table-hover">
                 <!-- table row -->
@@ -18,6 +22,8 @@
                     <th class="text-center col-1">Name</th>
                     <th class="text-center col-2">Class</th>
                     <th class="text-center col-1">Due Date</th>
+                    <th class="text-center col-1"></th>
+                    <th class="text-center col-1"></th>
                 </tr>
                 <!-- repeat template; td is table data -->
                 <% for(let count=0; count<assignmentList.length; count++) 
@@ -27,6 +33,20 @@
                             <td class="text-center col-1"><%= assignmentList[count].Name %></td>
                             <td class="text-center col-2"><%= assignmentList[count].Class %></td>
                             <td class="text-center col-1"><%= assignmentList[count].Due %></td>
+                            <td class="text-center col-1">
+                                <a href = "assignment/edit/<%= assignmentList[count]._id %>"
+                                    // btn-primary makes button blue
+                                    class="btn btn-primary"
+                                    <i class="fas fa-pencil-alt"></i>Edit
+                                </a>
+                            </td>
+                            <td class="text-center col-1">
+                                <a href = "assignment/delete/<%= assignmentList[count]._id %>"
+                                    // btn-danger makes button red
+                                    class="btn btn-danger"
+                                    <i class="fas fa-trash-alt"></i>Delete
+                                </a>
+                            </td>
                         </tr>
                     <%
                 } %>
@@ -35,5 +55,5 @@
     </div>
   </div>
 </main>
-<%- include partials/bottom_nav.ejs %>
-<%- include partials/footer.ejs %>
+<%- include ../partials/bottom_nav.ejs %>
+<%- include ../partials/footer.ejs %>
