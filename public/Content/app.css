@@ -2,3 +2,48 @@
    Gabrielle Paguio
    100820990 */
 
+/* Nav Bar */
+#navBar
+{
+   background-color: #161A26;
+}
+.nav-link
+{
+   color: white;
+}
+
+/* All Pages */
+main
+{
+   background-color: #161A26;
+}
+
+/* About Me Page */
+.aboutMain
+{
+   background-color: #161A26;
+}
+.jumbotron-fluid
+{
+   background-color: #31384e;
+   color: white;
+   margin-left: 10%;
+   margin-right: 10%;
+}
+.container
+{
+   padding: 4%;
+}
+.btnAbout
+{
+   background: #464AA6;
+   border: none;
+   padding: 1.5%;
+   color: #f2dfba;
+   text-decoration: none;
+}
+.btnAbout:hover
+{
+   background: #f2dfba;
+   color: #1F2440;
+}
