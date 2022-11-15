@@ -7,6 +7,11 @@
 {
    background-color: #161A26;
 }
+#nameNavBar:hover
+{
+   color: white;
+   text-shadow: 0px 0px 4px #f2dfba;
+}
 .nav-link
 {
    color: white;
@@ -54,5 +59,3 @@ main
    background: #f2dfba;
    color: #1F2440;
 }
-
-/* Splash Page */

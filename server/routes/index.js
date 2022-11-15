@@ -8,7 +8,5 @@ app.get('/', indexController.displaySplashPage);
 
 app.get('/home', indexController.displaySplashPage);
 
-
-
 module.exports = app;
 
