@@ -6,16 +6,24 @@
 #navBar
 {
    background-color: #161A26;
+   
 }
 .nav-link
 {
    color: white;
+   padding-left: 15px !important;
+   padding-right: 15px !important;
+   font-size: 14px;
 }
 
 /* All Pages */
 main
 {
    background-color: #161A26;
+}
+.container
+{
+   color: white;
 }
 
 /* About Me Page */
@@ -48,12 +56,4 @@ main
    color: #1F2440;
 }
 
-/* Assignment List Page */
-.listCon
-{
-   color: white;
-}
-.listTable
-{
-   color: white;
-}
+/* Splash Page */
