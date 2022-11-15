@@ -8,8 +8,8 @@ let assignmentsModel = mongoose.Schema
     {
         Name: String,
         Class: String,
-        // CHANGE TO DATE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        Due: String
+        Due: String,
+        Weight: String
     },
     {
         collection: "assignments"

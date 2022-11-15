@@ -2,8 +2,8 @@
     Gabrielle Paguio
     100820990-->
 
-<%- include ../partials/header.ejs %>
-<%- include ../partials/nav_bar.ejs %>
+<%- include ('../partials/header.ejs') %>
+<%- include ('../partials/nav_bar.ejs') %>
 
 <!-- content for edit page -->
 <main class="min-vh-100">
@@ -45,6 +45,14 @@
                             required>
                     </div>
                     <br>
+                    <div class="form-group">
+                        <label for="dueTextField">Weight</label>
+                        <input type="number" class="form-control"
+                            id="weightTextField"
+                            placeholder="Weight Percantage"
+                            name="Weight" required>
+                    </div>
+                    <br>
                     <button class="btn btn-primary" type="submit">
                         <i class="fas fa-edit"></i>Submit</button>
 
@@ -57,5 +65,5 @@
     </div>
 </main>
 
-<%- include ../partials/bottom_nav.ejs %>
-<%- include ../partials/footer.ejs %>
+<%- include ('../partials/bottom_nav.ejs') %>
+<%- include ('../partials/footer.ejs') %>

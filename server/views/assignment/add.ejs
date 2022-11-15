@@ -2,8 +2,8 @@
     Gabrielle Paguio
     100820990-->
 
-<%- include ../partials/header.ejs %>
-<%- include ../partials/nav_bar.ejs %>
+<%- include ('../partials/header.ejs') %>
+<%- include ('../partials/nav_bar.ejs') %>
 
 <!-- content for add page -->
 <main class="min-vh-100">
@@ -29,13 +29,21 @@
                             name="Class" required>
                     </div>
                     
-                    <!-- make it a date and time-->
+                    <!-- type is date so the UI is better when entering the date; shows the modern calendar -->
                     <div class="form-group">
                         <label for="dueTextField">Due Date</label>
                         <input type="date" class="form-control"
                             id="dueTextField"
                             placeholder="Enter Due Date: DD-MM-YYYY"
                             name="Due" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dueTextField">Weight</label>
+                        <input type="number" class="form-control"
+                            id="weightTextField"
+                            placeholder="Weight Percantage"
+                            name="Weight" required>
                     </div>
                     <br>
                     <button class="btn btn-primary" type="submit">
@@ -48,5 +56,5 @@
         </div>
     </div>
 </main>
-<%- include ../partials/bottom_nav.ejs %>
-<%- include ../partials/footer.ejs %>
+<%- include ('../partials/bottom_nav.ejs') %>
+<%- include ('../partials/footer.ejs') %>
