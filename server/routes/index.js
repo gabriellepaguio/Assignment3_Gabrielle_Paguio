@@ -6,11 +6,8 @@ let indexController = require("../controller/index");
 /* GET splash page. */
 app.get('/', indexController.displaySplashPage);
 
-/* GET main page. */
-app.get('/main', indexController.displayMainPage);
+app.get('/home', indexController.displaySplashPage);
 
-/* GET about page. */
-app.get('/about', indexController.displayAboutPage);
 
 
 module.exports = app;
