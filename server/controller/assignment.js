@@ -42,7 +42,8 @@ module.exports.processAddPage = (req,res,next)=>
         {
             "Name": req.body.Name,
             "Class": req.body.Class,
-            "Due": req.body.Due
+            "Due": req.body.Due,
+            "Weight": req.body.Weight
         }
     );
     Assignment.create(newAssignment,(err,Assignment)=>
@@ -87,7 +88,8 @@ module.exports.processEditPage = (req,res,next)=>
             "_id": id,
             "Name": req.body.Name,
             "Class": req.body.Class,
-            "Due": req.body.Due
+            "Due": req.body.Due,
+            "Weight": req.body.Weight
         }
     );
     Assignment.updateOne({_id:id}, updateAs,(err) =>

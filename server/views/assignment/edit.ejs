@@ -46,11 +46,13 @@
                     </div>
                     <br>
                     <div class="form-group">
-                        <label for="dueTextField">Weight</label>
+                        <label for="weightTextField">Weight</label>
                         <input type="number" class="form-control"
                             id="weightTextField"
                             placeholder="Weight Percantage"
-                            name="Weight" required>
+                            name="Weight" 
+                            value="<%= assignment.Weight %>"
+                            required>
                     </div>
                     <br>
                     <button class="btn btn-primary" type="submit">
