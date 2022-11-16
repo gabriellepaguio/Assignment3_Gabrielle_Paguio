@@ -7,6 +7,10 @@
 {
    background-color: #161A26;
 }
+#nameNavBar
+{
+   font-size: 35px;
+}
 #nameNavBar:hover
 {
    color: white;
@@ -18,6 +22,10 @@
    padding-left: 15px !important;
    padding-right: 15px !important;
    font-size: 14px;
+}
+.nav-link:active
+{
+   color: #31384e;
 }
 
 /* All Pages */
@@ -46,7 +54,7 @@ main
 {
    padding: 4%;
 }
-.btnAbout
+.btnStart
 {
    background: #464AA6;
    border: none;
@@ -54,7 +62,7 @@ main
    color: #f2dfba;
    text-decoration: none;
 }
-.btnAbout:hover
+.btnStart:hover
 {
    background: #f2dfba;
    color: #1F2440;
