@@ -24,6 +24,7 @@
                     <th class="text-center col-4">Class</th>
                     <th class="text-center col-2">Due Date</th>
                     <th class="text-center col-1">Weight Percentage</th>
+                    <!-- under theres two rows are for the edit and delete buttons -->
                     <th class="text-center col-1"></th>
                     <th class="text-center col-1"></th>
                 </tr>
@@ -32,20 +33,19 @@
                 {
                     %>
                         <tr>
+                            <!-- list of all the assignmnets in the database -->
                             <td class="text-center col-1"><%= assignmentList[count].Name %></td>
                             <td class="text-center col-2"><%= assignmentList[count].Class %></td>
                             <td class="text-center col-2"><%= assignmentList[count].Due %></td>
                             <td class="text-center col-1"><%= assignmentList[count].Weight %></td>
                             <td class="text-center col-1">
                                 <a href = "assignmentList/edit/<%= assignmentList[count]._id %>"
-                                    // btn-primary makes button blue
                                     class="btn btn-primary">
                                     <i class="fas fa-pencil-alt"></i> Edit
                                 </a>
                             </td>
                             <td class="text-center col-1">
                                 <a href = "assignmentList/delete/<%= assignmentList[count]._id %>"
-                                    // btn-danger makes button red
                                     class="btn btn-danger">
                                     <i class="fas fa-trash-alt"></i> Delete
                                 </a>

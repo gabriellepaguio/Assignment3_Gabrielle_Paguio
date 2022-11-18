@@ -10,17 +10,19 @@
     <div class="container">
         <div class="row">
             <div class="col-md-offset-3 col-md-6">
+                <!-- displays title of the page -->
                 <h1><%= title %></h1>
                 <form class="form" method="post">
                     <!-- form to fill out to add an assignment -->
                     <div class="form-group">
+                        <!-- Text field for the assignment name; required to add to database -->
                         <label for="nameTextField">Assignemnt Name</label>
                         <input type="text" class="form-control"
                             id="nameTextField"
                             placeholder="Enter Assignment Name"
                             name="Name" required>
                     </div>
-
+                    <!-- Text field for the class the assignment is for; required to add to database -->
                     <div class="form-group">
                         <label for="classTextField">Class</label>
                         <input type="text" class="form-control"
@@ -28,8 +30,8 @@
                             placeholder="Enter Class Name"
                             name="Class" required>
                     </div>
-                    
-                    <!-- type is date so the UI is better when entering the date; shows the modern calendar -->
+                    <!-- Field for the assignment due date; required to add to database -->
+                    <!-- data type is date so the UI is better when entering the date; shows the modern calendar -->
                     <div class="form-group">
                         <label for="dueTextField">Due Date</label>
                         <input type="date" class="form-control"
@@ -37,7 +39,8 @@
                             placeholder="Enter Due Date: DD-MM-YYYY"
                             name="Due" required>
                     </div>
-
+                    
+                    <!-- Field for the assignment weight (how much it's worth); not required to add to database -->
                     <div class="form-group">
                         <label for="weightTextField">Weight</label>
                         <input type="number" class="form-control"
@@ -47,9 +50,10 @@
                             required>
                     </div>
                     <br>
+                    <!-- submit button -->
                     <button class="btn btn-primary" type="submit">
                         <i class="fas fa-edit"></i>Submit</button>
-
+                    <!-- cancel button -->
                     <a href = "/assignmentList" class="btn btn-warning">
                         <i class="fas fa-undo"></i>Cancel</a><br>
                 </form>
