@@ -16,7 +16,7 @@
 #nameNavBar:hover
 {
    color: white;
-   text-shadow: 4px 3px 4px #f2dfba;
+   text-shadow: 4px 3px 6.7px #f2dfba;
 }
 .nav-link
 {
@@ -35,8 +35,11 @@
 {
     float: right;
     margin-right: 2%;
-    /* font-family: 'Nunito Sans', sans-serif; */
     font-weight: none !important;
+}
+.navbar-text
+{
+   margin-left: 2%;
 }
 .profileLink:link
 {
