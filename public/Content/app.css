@@ -1,4 +1,4 @@
-/* Assignment 3
+/* Assignment 3 - CSS File
    Gabrielle Paguio
    100820990 */
 
@@ -10,11 +10,13 @@
 #nameNavBar
 {
    font-size: 35px;
+   margin-left: 20px;
+   letter-spacing: 3px;
 }
 #nameNavBar:hover
 {
    color: white;
-   text-shadow: 0px 0px 4px #f2dfba;
+   text-shadow: 4px 3px 4px #f2dfba;
 }
 .nav-link
 {
@@ -23,10 +25,41 @@
    padding-right: 15px !important;
    font-size: 14px;
 }
-
 .nav-link:active
 {
    color: #31384e;
+}
+
+/* Bottom Nav */
+#profiles
+{
+    float: right;
+    margin-right: 2%;
+    /* font-family: 'Nunito Sans', sans-serif; */
+    font-weight: none !important;
+}
+.profileLink:link
+{
+    color: #f2dfba;
+    text-decoration: none;
+}
+.profileLink:visited
+{
+    color: #f2dfba;
+    text-decoration: none;
+}
+.profileLink:hover
+{
+    color: #f2dfba !important;
+    text-shadow: 3px 5px 6.7px #f2dfba;
+    text-decoration: none;
+}
+.profileLink:active
+{
+    border: none;
+    color: white;
+    text-shadow: 3px 5px 6.7px #f2dfba;
+    text-decoration: none;
 }
 
 /* All Pages */
@@ -39,7 +72,7 @@ main
    color: white;
 }
 
-/* About Me Page */
+/* Splash Page */
 .aboutMain
 {
    background-color: #161A26;
